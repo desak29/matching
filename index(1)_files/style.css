@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	background-color: grey;
 	font-family: serif;
 }
 
@@ -13,7 +13,7 @@ h1 {
 
 .image {
 	float: left;
-	width: 24.00%;
+	width: 25.00%;
 
 	padding: .0%;
 	
@@ -26,9 +26,10 @@ border-style: dotted;
 }
 
 
-.landscape img {
+.portrait img {
 	width: 100%;
-	
+	padding:.1%;
+	max height:470px;
 
 	
 ;
@@ -38,4 +39,19 @@ border-style: dotted;
 
 
 }
+
+
+.extra-stuff{
+	font-size: 15px;
+	float: left;
+	width: 96.4%;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	padding:10% 0;
+	margin-top:0;
+	margin-left:0%;
+}
+
+
 
