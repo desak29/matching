@@ -1,0 +1,144 @@
+#overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:190;
+	width:100%;
+	height:auto;
+	background-color:#151410;
+}
+
+#lightbox{
+	position:absolute;
+	top:20px;
+	left:0;
+	width:100%;
+	z-index:200;
+	text-align:center;
+	color:#151410;
+	line-height:0;
+}
+
+#lightbox a, #lightbox a:hover {
+	border-bottom:none;
+	color:#151410;
+	text-decoration:underline;
+}
+
+#lightbox a img{ border:none; }
+
+#outerImageContainer{
+	width:auto;
+	height:auto; /* without this line error in IE8 detected */
+	margin:0 auto;
+	position:relative;
+}
+
+#lightboxImage{
+	width:100%;
+	height:100%;
+}
+
+#imageContainerMain{
+	margin:0 auto;
+	overflow:visible;
+	position:relative;
+	font-size:0;/* ie fix - big info bar*/
+}
+
+#imageContainer{
+	width:10px;
+	height:10px;
+	margin:0 auto;
+	overflow:hidden;
+	background-color:#fff;
+	position:relative;
+	font-size:0;/* ie fix - big info bar*/
+}
+
+
+#hoverNav{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	z-index:10;
+}
+#imageContainer>#hoverNav{ left:0;}
+#prevLinkImg, #nextLinkImg{
+	top:0;
+	width:48px;
+	height:100%;
+	position:absolute;
+	z-index:20;
+	outline-style:none;
+	display:block;
+	text-indent:-9999px;
+	}
+* html #prevLinkImg,* html #nextLinkImg{
+	background-image:url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */
+}
+#prevLinkImg { left: 0; }
+#nextLinkImg { right: 0; }
+#prevLinkImg:hover,#prevLinkImg.hover, #prevLinkImg:visited:hover { 
+	background:url(../images/prev.png) 5% center no-repeat; 
+	_background-image:url(../images/prev_ie6.gif)
+}
+#nextLinkImg:hover,#nextLinkImg.hover, #nextLinkImg:visited:hover { 
+	background:url(../images/next.png) 97% center no-repeat; 
+	_background-image:url(../images/next_ie6.gif)
+}
+
+
+#imageDataContainer{
+	font:10px Verdana, Helvetica, sans-serif;
+	font-family:"Lucida Grande",tahoma,verdana,arial,sans-serif;
+	font-size:13px;
+	background-color:#fff;
+	width:100%;
+}
+
+#imageData{
+	overflow:hidden;
+	width:100%;
+}
+#imageDetails{ width:70%; float:left; text-align:left; 	padding:10px 10px 0 0;}
+#caption{ font-weight:bold; display:block;}
+#numberDisplay{ display:block; float:left; padding:3px 10px 0 0;}
+#detailsNav{display:block; float:left;   padding:0; }	
+#prevLinkDetails, #nextLinkDetails, #slideShowControl{ background-repeat:no-repeat; outline-style:none; display:block; float:left;}
+#prevLinkDetails { margin:3px; margin-top:0px; width:22px;height:22px; background:url(../images/prevlabel.gif) left center;}
+#nextLinkDetails { margin:3px; margin-top:0px; width:22px;height:22px; background:url(../images/nextlabel.gif) right center;}
+
+
+#outerImageFrame{
+	border:solid 1px red;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+
+
+#outerImageContainer{
+	overflow:visible;
+}
+#outerImageContainer td{
+	text-align:center;
+	padding:0;
+}
+
+#lightboxFrameBody{
+	background-color:#fff;
+	border:solid 1px #fff; /* hack for opera table small cell width */
+}
+
+#outerImageContainer td, #outerImageContainer tr{
+	font-size:0;
+	border:0 none;
+}
+/* frame style */
+#outerImageContainer td.tl, #outerImageContainer td.br{
+	height:21px;
+	width:21px;
+}

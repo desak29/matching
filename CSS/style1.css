@@ -1,0 +1,9 @@
+html,body,#wrapper{
+    width:100%;
+}
+
+#wrapper div{
+    height:200px;
+    width:calc(100% / 3);
+    display:inline-block;
+}
